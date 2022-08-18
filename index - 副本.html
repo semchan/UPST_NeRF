@@ -1,0 +1,1091 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+
+<script src="http://www.google.com/jsapi" type="text/javascript"></script>
+<script type="text/javascript">google.load("jquery", "1.3.2");</script>
+
+<style type="text/css">
+body {
+    font-family: "Titillium Web", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight: 300;
+    font-size: 17px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 980px;
+}
+h1 {
+    font-weight:300;
+    line-height: 1.15em;
+}
+
+h2 {
+    font-size: 1.75em;
+}
+a:link,a:visited {
+    color: #1367a7;
+    text-decoration: none;
+}
+a:hover {
+    color: #208799;
+}
+h1, h2, h3 {
+    text-align: center;
+}
+h1 {
+    font-size: 40px;
+    font-weight: 500;
+}
+h2 {
+    font-weight: 400;
+    margin: 16px 0px 4px 0px;
+}
+.paper-title {
+    padding: 16px 0px 16px 0px;
+}
+section {
+    margin: 32px 0px 32px 0px;
+    text-align: justify;
+    clear: both;
+}
+.col-6 {
+     width: 16.6%;
+     float: left;
+}
+.col-5 {
+     width: 20%;
+     float: left;
+}
+.col-4 {
+     width: 25%;
+     float: left;
+}
+.col-3 {
+     width: 33%;
+     float: left;
+}
+.col-2 {
+     width: 50%;
+     float: left;
+}
+.row, .author-row, .affil-row {
+     overflow: auto;
+}
+.author-row, .affil-row {
+    font-size: 20px;
+}
+.row {
+    margin: 16px 0px 16px 0px;
+}
+.authors {
+    font-size: 18px;
+}
+.affil-row {
+    margin-top: 16px;
+}
+.teaser {
+    max-width: 100%;
+}
+.text-center {
+    text-align: center;  
+}
+.screenshot {
+    width: 256px;
+    border: 1px solid #ddd;
+}
+.screenshot-el {
+    margin-bottom: 16px;
+}
+hr {
+    height: 1px;
+    border: 0; 
+    border-top: 1px solid #ddd;
+    margin: 0;
+}
+.material-icons {
+    vertical-align: -6px;
+}
+p {
+    line-height: 1.25em;
+}
+.caption {
+    font-size: 16px;
+    /*font-style: italic;*/
+    color: #666;
+    text-align: left;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+video {
+    display: block;
+    margin: auto;
+}
+figure {
+    display: block;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+#bibtex pre {
+    font-size: 14px;
+    background-color: #eee;
+    padding: 16px;
+}
+.blue {
+    color: #2c82c9;
+    font-weight: bold;
+}
+.orange {
+    color: #d35400;
+    font-weight: bold;
+}
+.flex-row {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.paper-btn {
+  position: relative;
+  text-align: center;
+
+  display: inline-block;
+  margin: 8px;
+  padding: 8px 8px;
+
+  border-width: 0;
+  outline: none;
+  border-radius: 2px;
+  
+  background-color: #1367a7;
+  color: #ecf0f1 !important;
+  font-size: 20px;
+  width: 100px;
+  font-weight: 600;
+}
+
+.supp-btn {
+  position: relative;
+  text-align: center;
+
+  display: inline-block;
+  margin: 8px;
+  padding: 8px 8px;
+
+  border-width: 0;
+  outline: none;
+  border-radius: 2px;
+  
+  background-color: #1367a7;
+  color: #ecf0f1 !important;
+  font-size: 20px;
+  width: 150px;
+  font-weight: 600;
+}
+
+.paper-btn-parent {
+    display: flex;
+    justify-content: center;
+    margin: 16px 0px;
+}
+.paper-btn:hover {
+    opacity: 0.85;
+}
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+.venue {
+    color: #1367a7;
+}
+
+
+
+.topnav {
+  overflow: hidden;
+  background-color: #EEEEEE;
+}
+
+.topnav a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+
+
+</style>
+
+
+<div class="topnav" id="myTopnav">
+
+</div>
+
+
+<!-- End : Google Analytics Code -->
+<script type="text/javascript" src="../js/hidebib.js"></script>
+<link href='https://fonts.googleapis.com/css?family=Titillium+Web:400,600,400italic,600italic,300,300italic' rel='stylesheet' type='text/css'>
+<head>
+    <title>UPST-NeRF: Universal Photorealistic Style Transfer of Neural Radiance Fields for 3D Scene</title>
+    <meta property="og:description" content="UPST-NeRF: Universal Photorealistic Style Transfer of Neural Radiance Fields for 3D Scene"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-6HHDEXF452"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-6HHDEXF452');
+</script>
+
+</head>
+
+
+ <body>
+<div class="container">
+    <div class="paper-title">
+      <h1>UPST-NeRF: Universal Photorealistic Style Transfer of Neural Radiance Fields for 3D Scene</h1>
+    </div>
+
+    
+    <div id="authors">
+        <div class="author-row">
+            <div class="col-5 text-center"><a href="https://scholar.google.com.hk/citations?user=HvWZhM4AAAAJ&hl=zh-CN">Yaosen Chen</a><sup>1</sup></div>
+            <div class="col-5 text-center">Qi Yuan</a><sup>1</sup></div>
+            <div class="col-5 text-center">Zhiqiang Li</a><sup>1</sup></div>
+            <div class="col-5 text-center">Yuegen Liu</a><sup>1,3</sup></div>
+            <div class="col-5 text-center"><a href="https://scholar.google.com.hk/citations?user=tfJVFEcAAAAJ&hl=zh-CN">Wei Wang</a><sup>*1,2</sup></div>
+            <div class="col-5 text-center">Chaoping Xie</a><sup>1,2</sup></div>
+            <div class="col-5 text-center">Xuming Wen</a><sup>1,2</sup></div>
+            <div class="col-5 text-center">Qien Yu</a><sup>4</sup></div>
+        </div>
+
+        <div class="affil-row">
+            <div class="col-8 text-center"><sup>1</sup>Media Intelligence Laboratory, ChengDu Sobey Digital Technology Co., Ltd</a></div>
+            <div class="col-8 text-center"><sup>2</sup>Peng Cheng Laboratory</a></div>
+            <div class="col-8 text-center"><sup>3</sup>Southwest Jiaotong University</div>
+            <div class="col-8 text-center"><sup>4</sup>Sichuan University</div>
+        </div>
+
+        <p class="caption">
+            *Corresponding Author is Wei Wang.
+        </p>
+
+
+        <div style="clear: both">
+            <div class="paper-btn-parent">
+            <a class="supp-btn" href="assets/upstnerf.pdf">
+                <span class="material-icons"> description </span> 
+                 Paper
+            </a>
+
+            <a class="supp-btn" href="https://github.com/semchan/UPST-NeRF">
+                <span class="material-icons"> description </span> 
+                  Code
+            </a>
+        </div></div>
+    </div>
+
+
+    <section id="paper">
+        <h2>Paper</h2>
+        <hr>
+        <div class="flex-row">
+            <div style="box-sizing: border-box; padding: 16px; margin: auto;">
+                <a href="assets/upstnerf.pdf"><img class="screenshot" src="assets/paper_preview.png"></a>
+            </div>
+            <div style="width: 50%">
+                <p><b>UPST-NeRF: Universal Photorealistic Style Transfer of Neural Radiance Fields for 3D Scene</b></p>
+                <p>Yaosen Chen, Qi Yuan, Zhiqiang Li, Yuegen Liu, Wei Wang, Chaoping Xie, Xuming Wen, Qien Yu</p>
+
+                <div><span class="material-icons"> description </span><a href="assets/upstnerf.pdf"> Paper camera-ready</a></div>
+                <div><span class="material-icons"> description </span><a href="https://arxiv.org/abs/2208.07059"> arXiv version</a></div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+    <section id="teaser" class="flex-row">
+            <a href="assets/image/tear.png" style="text-align: center;">
+                <img width="90%" src="assets/image/tear.png" >
+            </a>
+        <p class="caption">
+            <strong>Transferring photorealistic style with a style image in the 3D scene.</strong>Multi-view images of a given set of 3D scenes (a) and a style image (b), our model is capable of rendering photorealistic stylized novel views  (c) with a consistent appearance at various view angles in 3D space.
+        </p>
+    </section>
+    
+
+
+
+
+
+    <section id="abstract"/>
+        <h2>Abstract</h2>
+        <hr>
+
+        <p>3D scenes photorealistic stylization aims to generate photorealistic images from arbitrary novel views according to a given style image while ensuring consistency when rendering from different viewpoints. Some existing stylization methods with neural radiance fields can effectively predict stylized scenes by combining the features of the style image with multi-view images to train 3D scenes. However, these methods generate novel view images that contain objectionable artifacts. Besides, they cannot achieve universal photorealistic stylization for a 3D scene. Therefore, a styling image must retrain a 3D scene representation network based on a neural radiation field. We propose a novel 3D scene photorealistic style transfer framework to address these issues. It can realize photorealistic 3D scene style transfer with a 2D style image. We first pre-trained a 2D photorealistic style transfer network, which can meet the photorealistic style transfer between any given content image and style image. Then, we use voxel features to optimize a 3D scene and get the geometric representation of the scene. Finally, we jointly optimize a hyper network to realize the scene photorealistic style transfer of arbitrary style images. In the transfer stage, we use a pre-trained 2D photorealistic network to constrain the photorealistic style of different views and different style images in the 3D scene. The experimental results show that our method not only realizes the 3D photorealistic style transfer of arbitrary style images but also outperforms the existing methods in terms of visual quality and consistency. Project page:https://semchan.github.io/UPST_NeRF/.
+            </p>
+    </section>
+
+
+    <section id="method"/>
+        <h2>Approach</h2>
+<hr>
+
+    <section id="teaser" class="flex-row">
+            <a href="assets/image/overview.png" style="text-align: center;">
+                <img width="90%" src="assets/image/overview.png" >
+            </a>
+        <p class="caption">
+            <strong>Overview of Universal Photorealistic Style Transfer of Neural Radiance Fields.</strong>In our framework, the training in photorealistic style transfer in 3D scenes divides into two stages. The first stage is geometric training for a single scene. We use the density voxel grid and feature voxel grid to represent the scene directly, and the density voxel grid is used to output density; the feature voxel grid with a shallow MLP of RGBNet use to predict the color. The second stage is style training. The parameters of the density voxel grid and feature voxel grid will be frozen, and we use a reference style image's features to be the input of the hyper network, which can control the RGBNet's input. Thus, we jointly optimize the hyper network to realize the scene photorealistic style transfer with arbitrary style images.
+        </p>
+    </section>
+
+
+    <hr>
+    <section id="teaser-videos">
+        <div class="flex-row">
+        <figure style="width: 50%;">
+            <a href="assets/image/net.png">
+                <img width="100%" src="assets/image/net.png">
+            </a>
+        </figure>
+            <div style="width: 40%;">
+                <br><br>
+                <p> <strong>The architecture of YUVStyleNet.</strong>  We designed a framework for 2D photorealistic style transfer, which supports the input of a full resolution style image and a full resolution content image, and realizes the photorealistic transfer of styles from the style image to the content image. In this framework, we transform the image into YUV channels. The final fusion uses the generated stylized UV channel, and the Y channel fusion after the stylized image is fused with the original content image to get the final photorealistic stylized image.</p> 
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+    <section id="results">
+        <h2>Qualitative comparisons with artistic style images</h2>
+        <hr>
+        <section>
+            <div class="flex-row">
+                <figure style="width: 14%; text-align: center;">
+                    <video width="100%" controls muted loop autoplay>
+                        <source src="assets/video/nerf/org/chair.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <video class="left" width="100%" controls muted loop autoplay>
+                        <source src="assets/video/nerf/org/lego.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <video class="left" width="100%" controls muted loop autoplay>
+                        <source src="assets/video/nerf/org/mic.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <p> No style </p>
+                </figure>
+                <figure style="width: 14%; text-align: center;">
+                    <video class="left" width="100%" controls muted loop autoplay>
+                        <source src="assets/video/nerf/ours/chair.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <video class="left" width="100%" controls muted loop autoplay>
+                        <source src="assets/video/nerf/ours/lego.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <video class="left" width="100%" controls muted loop autoplay>
+                        <source src="assets/video/nerf/ours/mic.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <p><strong>Ours</strong></p>
+                </figure>
+                <figure style="width: 14%; text-align: center;">
+                    <video class="left" width="100%" controls muted loop autoplay>
+                        <source src="assets/video/nerf/INC/chair_rain_princess.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <video class="left" width="100%" controls muted loop autoplay>
+                        <source src="assets/video/nerf/INC/lego_the_scream.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <video class="left" width="100%" controls muted loop autoplay>
+                        <source src="assets/video/nerf/INC/mic_starry_night.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <p> INS </p>
+                </figure>
+                <figure style="width: 14%; text-align: center;">
+                    <video class="left" width="100%" controls muted loop autoplay>
+                        <source src="assets/video/nerf/Style3D/chair_rain_princess.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <video class="left" width="100%" controls muted loop autoplay>
+                        <source src="assets/video/nerf/Style3D/lego_the_scream.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <video class="left" width="100%" controls muted loop autoplay>
+                        <source src="assets/video/nerf/Style3D/mic_starry_night.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <p> Style3D </p>
+                </figure>
+                <figure style="width: 14%; text-align: center;">
+                    <video class="left" width="100%" controls muted loop autoplay>
+                        <source src="assets/video/nerf/PL/chair_rain_princess.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <video class="left" width="100%" controls muted loop autoplay>
+                        <source src="assets/video/nerf/PL/lego_the_scream.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <video class="left" width="100%" controls muted loop autoplay>
+                        <source src="assets/video/nerf/PL/mic_starry_night.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <p > Perceptual Loss </p>
+                </figure>
+                <figure style="width: 14%; text-align: center;">
+                    <video class="left" width="100%" controls muted loop autoplay>
+                        <source src="assets/video/nerf/MCCNet/chair_rain_princess.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <video class="left" width="100%" controls muted loop autoplay>
+                        <source src="assets/video/nerf/MCCNet/lego_the_scream.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <video class="left" width="100%" controls muted loop autoplay>
+                        <source src="assets/video/nerf/MCCNet/mic_starry_night.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <p > MCCNet </p>
+                </figure>
+                <figure style="width: 14%; text-align: center;">
+                    <video class="left" width="100%" controls muted loop autoplay>
+                        <source src="assets/video/nerf/ReReVST/chair_rain_princess.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <video class="left" width="100%" controls muted loop autoplay>
+                        <source src="assets/video/nerf/ReReVST/lego_the_scream.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <video class="left" width="100%" controls muted loop autoplay>
+                        <source src="assets/video/nerf/ReReVST/mic_starry_night.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <p > ReReVST </p>
+                </figure>
+                
+            </div>
+        </section>
+        
+        <br/>
+        <hr>
+    </section>
+    
+    
+    
+    
+    
+    
+    <section id="results">
+        <h2> Qualitative comparisons with photorealistic style images</h2>
+
+        <section>
+            <div class="flex-row">
+                <figure style="width: 16%; text-align: center;">
+                    <video width="100%" controls muted loop autoplay>
+                        <source src="assets/video/llff/org/org_fern.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <video class="left" width="100%" controls muted loop autoplay>
+                        <source src="assets/video/llff/org/org_flower.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <video class="left" width="100%" controls muted loop autoplay>
+                        <source src="assets/video/llff/org/org_horns.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <video class="left" width="100%" controls muted loop autoplay>
+                        <source src="assets/video/llff/org/org_orchids.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <video class="left" width="100%" controls muted loop autoplay>
+                        <source src="assets/video/llff/org/org_trex.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <p> No style </p>
+                </figure>
+                <figure style="width: 16%; text-align: center;">
+                    <video class="left" width="100%" controls muted loop autoplay>
+                        <source src="assets/video/llff/ours/fern_VID_20220501_163048_Moment.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <video class="left" width="100%" controls muted loop autoplay>
+                        <source src="assets/video/llff/ours/flower_54.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <video class="left" width="100%" controls muted loop autoplay>
+                        <source src="assets/video/llff/ours/horns_IMG_20210102_183303.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <video class="left" width="100%" controls muted loop autoplay>
+                        <source src="assets/video/llff/ours/orchids_IMG_20220503_154106.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <video class="left" width="100%" controls muted loop autoplay>
+                        <source src="assets/video/llff/ours/trex_IMG_20211002_181657.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <p><strong>Ours</strong></p>
+                </figure>
+                <figure style="width: 16%; text-align: center;">
+                    <video class="left" width="100%" controls muted loop autoplay>
+                        <source src="assets/video/llff/ARF/fern_VID_20220501_163048_Moment.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <video class="left" width="100%" controls muted loop autoplay>
+                        <source src="assets/video/llff/ARF/flower_54.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <video class="left" width="100%" controls muted loop autoplay>
+                        <source src="assets/video/llff/ARF/horns_IMG_20210102_183303.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <video class="left" width="100%" controls muted loop autoplay>
+                        <source src="assets/video/llff/ARF/orchids_IMG_20220503_154106.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <video class="left" width="100%" controls muted loop autoplay>
+                        <source src="assets/video/llff/ARF/trex_IMG_20211002_181657.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <p> ARF </p>
+                </figure>
+                <figure style="width: 16%; text-align: center;">
+                    <video class="left" width="100%" controls muted loop autoplay>
+                        <source src="assets/video/llff/adain/fern_VID_20220501_163048_Moment.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <video class="left" width="100%" controls muted loop autoplay>
+                        <source src="assets/video/llff/adain/flower_54.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <video class="left" width="100%" controls muted loop autoplay>
+                        <source src="assets/video/llff/adain/horns_IMG_20210102_183303.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <video class="left" width="100%" controls muted loop autoplay>
+                        <source src="assets/video/llff/adain/orchids_IMG_20220503_154106.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <video class="left" width="100%" controls muted loop autoplay>
+                        <source src="assets/video/llff/adain/trex_IMG_20211002_181657.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <p> AdaIN </p>
+                </figure>
+                <figure style="width: 16%; text-align: center;">
+                    <video class="left" width="100%" controls muted loop autoplay>
+                        <source src="assets/video/llff/MCCNet/fern_VID_20220501_163048_Moment.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <video class="left" width="100%" controls muted loop autoplay>
+                        <source src="assets/video/llff/MCCNet/flower_54.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <video class="left" width="100%" controls muted loop autoplay>
+                        <source src="assets/video/llff/MCCNet/horns_IMG_20210102_183303.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <video class="left" width="100%" controls muted loop autoplay>
+                        <source src="assets/video/llff/MCCNet/orchids_IMG_20220503_154106.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <video class="left" width="100%" controls muted loop autoplay>
+                        <source src="assets/video/llff/MCCNet/trex_IMG_20211002_181657.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <p > MCCNet </p>
+                </figure>
+                <figure style="width: 16%; text-align: center;">
+                    <video class="left" width="100%" controls muted loop autoplay>
+                        <source src="assets/video/llff/PeReVST/fern_VID_20220501_163048_Moment.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <video class="left" width="100%" controls muted loop autoplay>
+                        <source src="assets/video/llff/PeReVST/flower_54.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <video class="left" width="100%" controls muted loop autoplay>
+                        <source src="assets/video/llff/PeReVST/horns_IMG_20210102_183303.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <video class="left" width="100%" controls muted loop autoplay>
+                        <source src="assets/video/llff/PeReVST/orchids_IMG_20220503_154106.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <video class="left" width="100%" controls muted loop autoplay>
+                        <source src="assets/video/llff/PeReVST/trex_IMG_20211002_181657.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <p > ReReVST </p>
+                </figure>
+                
+            </div>
+        </section>
+
+    </section>
+    
+
+
+
+
+
+
+
+
+
+<hr>
+
+   <section id="Consistency">
+        <h2> Consistency comparisons</h2>
+
+    <section id="teaser" class="flex-row">
+            <a href="assets/image/overview.png" style="text-align: center;">
+                <img width="60%" src="assets/image/consistency.png" >
+            </a>
+        <p class="caption">
+            <strong>Short-range and Long-range consistency.</strong>We use every two adjacent novel views ($O_{i},O_{i+1}$) and view pairs of gap 5 ($O_{i},O_{i+5}$) for short and long-range consistency calculation. The comparisons of short and long-range consistency are shown in Tab.1 and Tab.2, respectively. Our method outperforms other methods by a significant margin.
+        </p>
+    </section>
+
+    </section>
+    
+
+
+
+
+<hr>
+
+   <section id="UserStudy">
+        <h2> User study</h2>
+
+    <section id="teaser" class="flex-row">
+            <a href="assets/image/overview.png" style="text-align: center;">
+                <img width="40%" src="assets/image/userstudy.png" >
+            </a>
+        <p class="caption">
+            <strong>User study.</strong>We record the user preference in the form of boxplot. Our results win more preferences both in the photorealistic stylization and consistency quality.
+        </p>
+    </section>
+
+    </section>
+
+
+
+
+
+    
+
+
+
+
+
+</code></pre>
+    </section>
+
+<br />
+    
+
+    <section id="appendix">
+        <h2>Appendix</h2>
+        <hr>
+        <h4>on NeRF-Synthetic datasets</h4>
+        <hr>
+        <div class="flex-row">
+            <figure style="width: 16%;height: 100%;text-align: center;">
+                <video class="left" width="100%" height="100%" controls muted loop autoplay>
+                    <source src="assets/video/nerf/org/chair.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <video class="left" width="100%" height="100%" controls muted loop autoplay>
+                    <source src="assets/video/ours/nerf/chair_IMG_20210921_192826.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <video class="left" width="100%" height="100%" controls muted loop autoplay>
+                    <source src="assets/video/ours/nerf/chair_IMG_20220226_191745.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <video class="left" width="100%" height="100%" controls muted loop autoplay>
+                    <source src="assets/video/ours/nerf/chair_IMG_20220226_193634.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <video class="left" width="100%" height="100%" controls muted loop autoplay>
+                    <source src="assets/video/ours/nerf/chair_IMG_20220409_193907.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <video class="left" width="100%" height="100%" controls muted loop autoplay>
+                    <source src="assets/video/ours/nerf/chair_IMG_20220627_181117.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <video class="left" width="100%" height="100%" controls muted loop autoplay>
+                    <source src="assets/video/ours/nerf/chair_starry_night.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <p > chair </p>
+            </figure>
+            <figure style="width: 16%;height: 100%;text-align: center;">
+                <video class="left" width="100%" height="100%" controls muted loop autoplay>
+                    <source src="assets/video/nerf/org/drums.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <video class="left" width="100%" height="100%" controls muted loop autoplay>
+                    <source src="assets/video/ours/nerf/drums_IMG_20210921_192826.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <video class="left" width="100%" height="100%" controls muted loop autoplay>
+                    <source src="assets/video/ours/nerf/drums_IMG_20220226_191745.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <video class="left" width="100%" height="100%" controls muted loop autoplay>
+                    <source src="assets/video/ours/nerf/drums_IMG_20220226_193634.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <video class="left" width="100%" height="100%" controls muted loop autoplay>
+                    <source src="assets/video/ours/nerf/drums_IMG_20220409_193907.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <video class="left" width="100%" height="100%" controls muted loop autoplay>
+                    <source src="assets/video/ours/nerf/drums_IMG_20220627_181117.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <video class="left" width="100%" height="100%" controls muted loop autoplay>
+                    <source src="assets/video/ours/nerf/drums_starry_night.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <p > drums </p>
+            </figure>
+            <figure style="width: 16%;height: 100%;text-align: center;">
+                <video class="left" width="100%" height="100%" controls muted loop autoplay>
+                    <source src="assets/video/nerf/org/ficus.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <video class="left" width="100%" height="100%" controls muted loop autoplay>
+                    <source src="assets/video/ours/nerf/ficus_IMG_20210921_192826.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <video class="left" width="100%" height="100%" controls muted loop autoplay>
+                    <source src="assets/video/ours/nerf/ficus_IMG_20220226_191745.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <video class="left" width="100%" height="100%" controls muted loop autoplay>
+                    <source src="assets/video/ours/nerf/ficus_IMG_20220226_193634.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <video class="left" width="100%" height="100%" controls muted loop autoplay>
+                    <source src="assets/video/ours/nerf/ficus_IMG_20220409_193907.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <video class="left" width="100%" height="100%" controls muted loop autoplay>
+                    <source src="assets/video/ours/nerf/ficus_IMG_20220627_181117.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <video class="left" width="100%" height="100%" controls muted loop autoplay>
+                    <source src="assets/video/ours/nerf/ficus_starry_night.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <p > ficus </p>
+            </figure>
+            <figure style="width: 16%;height: 100%;text-align: center;">
+                <video class="left" width="100%" height="100%" controls muted loop autoplay>
+                    <source src="assets/video/nerf/org/hotdog.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <video class="left" width="100%" height="100%" controls muted loop autoplay>
+                    <source src="assets/video/ours/nerf/hotdog_IMG_20210921_192826.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <video class="left" width="100%" height="100%" controls muted loop autoplay>
+                    <source src="assets/video/ours/nerf/hotdog_IMG_20220226_191745.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <video class="left" width="100%" height="100%" controls muted loop autoplay>
+                    <source src="assets/video/ours/nerf/hotdog_IMG_20220226_193634.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <video class="left" width="100%" height="100%" controls muted loop autoplay>
+                    <source src="assets/video/ours/nerf/hotdog_IMG_20220409_193907.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <video class="left" width="100%" height="100%" controls muted loop autoplay>
+                    <source src="assets/video/ours/nerf/hotdog_IMG_20220627_181117.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <video class="left" width="100%" height="100%" controls muted loop autoplay>
+                    <source src="assets/video/ours/nerf/hotdog_starry_night.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <p > hotdog </p>
+            </figure>
+            <figure style="width: 16%;height: 100%;text-align: center;">
+                <video class="left" width="100%" height="100%" controls muted loop autoplay>
+                    <source src="assets/video/nerf/org/lego.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <video class="left" width="100%" height="100%" controls muted loop autoplay>
+                    <source src="assets/video/ours/nerf/lego_IMG_20210921_192826.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <video class="left" width="100%" height="100%" controls muted loop autoplay>
+                    <source src="assets/video/ours/nerf/lego_IMG_20220226_191745.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <video class="left" width="100%" height="100%" controls muted loop autoplay>
+                    <source src="assets/video/ours/nerf/lego_IMG_20220226_193634.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <video class="left" width="100%" height="100%" controls muted loop autoplay>
+                    <source src="assets/video/ours/nerf/lego_IMG_20220409_193907.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <video class="left" width="100%" height="100%" controls muted loop autoplay>
+                    <source src="assets/video/ours/nerf/lego_IMG_20220627_181117.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <video class="left" width="100%" height="100%" controls muted loop autoplay>
+                    <source src="assets/video/ours/nerf/lego_starry_night.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <p > lego </p>
+            </figure>
+            <figure style="width: 16%;height: 100%;text-align: center;">
+                <video class="left" width="100%" height="100%" controls muted loop autoplay>
+                    <source src="assets/video/nerf/org/mic.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <video class="left" width="100%" height="100%" controls muted loop autoplay>
+                    <source src="assets/video/ours/nerf/mic_IMG_20210921_192826.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <video class="left" width="100%" height="100%" controls muted loop autoplay>
+                    <source src="assets/video/ours/nerf/mic_IMG_20220226_191745.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <video class="left" width="100%" height="100%" controls muted loop autoplay>
+                    <source src="assets/video/ours/nerf/mic_IMG_20220226_193634.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <video class="left" width="100%" height="100%" controls muted loop autoplay>
+                    <source src="assets/video/ours/nerf/mic_IMG_20220409_193907.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <video class="left" width="100%" height="100%" controls muted loop autoplay>
+                    <source src="assets/video/ours/nerf/mic_IMG_20220627_181117.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <video class="left" width="100%" height="100%" controls muted loop autoplay>
+                    <source src="assets/video/ours/nerf/mic_starry_night.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <p > mic </p>
+            </figure>
+        </div>
+        <h4>on Local Light Field Fusion(LLFF) datasets</h4>
+        <hr>
+        <div class="flex-row">
+            <figure style="width: 16%;height: 100%;text-align: center;">
+                <video class="left" width="100%" height="100%" controls muted loop autoplay>
+                    <source src="assets/video/llff/org/org_fern.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <video class="left" width="100%" height="100%" controls muted loop autoplay>
+                    <source src="assets/video/ours/llff/fern_IMG_20210921_192826.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <video class="left" width="100%" height="100%" controls muted loop autoplay>
+                    <source src="assets/video/ours/llff/fern_IMG_20220226_191745.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <video class="left" width="100%" height="100%" controls muted loop autoplay>
+                    <source src="assets/video/ours/llff/fern_IMG_20220226_193634.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <video class="left" width="100%" height="100%" controls muted loop autoplay>
+                    <source src="assets/video/ours/llff/fern_IMG_20220627_181117.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <video class="left" width="100%" height="100%" controls muted loop autoplay>
+                    <source src="assets/video/ours/llff/fern_starry_night.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <p> fern </p>
+            </figure>
+            <figure style="width: 16%;height: 100%;text-align: center;">
+                <video class="left" width="100%" height="100%" controls muted loop autoplay>
+                    <source src="assets/video/llff/org/org_flower.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <video class="left" width="100%" height="100%" controls muted loop autoplay>
+                    <source src="assets/video/ours/llff/flower_IMG_20210921_192826.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <video class="left" width="100%" height="100%" controls muted loop autoplay>
+                    <source src="assets/video/ours/llff/flower_IMG_20220226_191745.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <video class="left" width="100%" height="100%" controls muted loop autoplay>
+                    <source src="assets/video/ours/llff/flower_IMG_20220226_193634.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <video class="left" width="100%" height="100%" controls muted loop autoplay>
+                    <source src="assets/video/ours/llff/flower_IMG_20220627_181117.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <video class="left" width="100%" height="100%" controls muted loop autoplay>
+                    <source src="assets/video/ours/llff/flower_starry_night.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <p> flower </p>
+            </figure>
+            <figure style="width: 16%;height: 100%;text-align: center;">
+                <video class="left" width="100%" height="100%" controls muted loop autoplay>
+                    <source src="assets/video/llff/org/org_horns.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <video class="left" width="100%" height="100%" controls muted loop autoplay>
+                    <source src="assets/video/ours/llff/horns_IMG_20210921_192826.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <video class="left" width="100%" height="100%" controls muted loop autoplay>
+                    <source src="assets/video/ours/llff/horns_IMG_20220226_191745.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <video class="left" width="100%" height="100%" controls muted loop autoplay>
+                    <source src="assets/video/ours/llff/horns_IMG_20220226_193634.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <video class="left" width="100%" height="100%" controls muted loop autoplay>
+                    <source src="assets/video/ours/llff/horns_IMG_20220627_181117.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <video class="left" width="100%" height="100%" controls muted loop autoplay>
+                    <source src="assets/video/ours/llff/horns_starry_night.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <p> horns </p>
+            </figure>
+            <figure style="width: 16%;height: 100%;text-align: center;">
+                <video class="left" width="100%" height="100%" controls muted loop autoplay>
+                    <source src="assets/video/llff/org/org_leaves.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <video class="left" width="100%" height="100%" controls muted loop autoplay>
+                    <source src="assets/video/ours/llff/leavesIMG_20210921_192826.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <video class="left" width="100%" height="100%" controls muted loop autoplay>
+                    <source src="assets/video/ours/llff/leavesIMG_20220226_191745.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <video class="left" width="100%" height="100%" controls muted loop autoplay>
+                    <source src="assets/video/ours/llff/leavesIMG_20220226_193634.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <video class="left" width="100%" height="100%" controls muted loop autoplay>
+                    <source src="assets/video/ours/llff/leavesIMG_20220627_181117.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <video class="left" width="100%" height="100%" controls muted loop autoplay>
+                    <source src="assets/video/ours/llff/leavesstarry_night.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <p> leaves </p>
+            </figure>
+            <figure style="width: 16%;height: 100%;text-align: center;">
+                <video class="left" width="100%" height="100%" controls muted loop autoplay>
+                    <source src="assets/video/llff/org/org_orchids.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <video class="left" width="100%" height="100%" controls muted loop autoplay>
+                    <source src="assets/video/ours/llff/orchidsIMG_20210921_192826.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <video class="left" width="100%" height="100%" controls muted loop autoplay>
+                    <source src="assets/video/ours/llff/orchidsIMG_20220226_191745.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <video class="left" width="100%" height="100%" controls muted loop autoplay>
+                    <source src="assets/video/ours/llff/orchidsIMG_20220226_193634.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <video class="left" width="100%" height="100%" controls muted loop autoplay>
+                    <source src="assets/video/ours/llff/orchidsIMG_20220627_181117.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <video class="left" width="100%" height="100%" controls muted loop autoplay>
+                    <source src="assets/video/ours/llff/orchidsstarry_night.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <p> orchids </p>
+            </figure>
+            <figure style="width: 16%;height: 100%;text-align: center;">
+                <video class="left" width="100%" height="100%" controls muted loop autoplay>
+                    <source src="assets/video/llff/org/org_trex.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <video class="left" width="100%" height="100%" controls muted loop autoplay>
+                    <source src="assets/video/ours/llff/trex_IMG_20210921_192826.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <video class="left" width="100%" height="100%" controls muted loop autoplay>
+                    <source src="assets/video/ours/llff/trex_IMG_20220226_191745.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <video class="left" width="100%" height="100%" controls muted loop autoplay>
+                    <source src="assets/video/ours/llff/trex_IMG_20220226_193634.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <video class="left" width="100%" height="100%" controls muted loop autoplay>
+                    <source src="assets/video/ours/llff/trex_IMG_20220627_181117.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <video class="left" width="100%" height="100%" controls muted loop autoplay>
+                    <source src="assets/video/ours/llff/trex_starry_night.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <p> trex </p>
+            </figure>
+        </div>          
+    </section>
+
+
+
+    <section id="bibtex">
+        <h2>Citation</h2>
+        <hr>
+        <pre><code>
+        @inproceedings{chen2022upstnerf,
+        title = {UPST-NeRF: Universal Photorealistic Style Transfer of Neural Radiance Fields for 3D Scene},
+        author = {Yaosen Chen and Qi Yuan and Zhiqiang Li and Yuegen Liu and Wei Wang and Chaoping Xie and Xuming Wen and Qien Yu},
+        year = {2022},
+        booktitle = {arxiv}
+        }
+
+
+
+</code></pre>
+    </section>
+</div>
+</body>
+</html>
